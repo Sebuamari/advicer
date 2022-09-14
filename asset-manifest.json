@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/advicer/static/css/main.3f001f20.css",
+    "main.js": "/advicer/static/js/main.f3febc5a.js",
+    "static/js/787.87558945.chunk.js": "/advicer/static/js/787.87558945.chunk.js",
+    "index.html": "/advicer/index.html",
+    "main.3f001f20.css.map": "/advicer/static/css/main.3f001f20.css.map",
+    "main.f3febc5a.js.map": "/advicer/static/js/main.f3febc5a.js.map",
+    "787.87558945.chunk.js.map": "/advicer/static/js/787.87558945.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3f001f20.css",
+    "static/js/main.f3febc5a.js"
+  ]
+}
