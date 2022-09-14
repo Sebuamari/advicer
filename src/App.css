@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+:root{
+  --Light-Cyan: hsl(193, 38%, 86%);
+  --Neon-Green: hsl(150, 100%, 66%);
+  --Grayish-Blue: hsl(217, 19%, 38%);
+  --Dark-Grayish-Blue: hsl(217, 19%, 24%);
+  --Dark-Blue: hsl(218, 23%, 16%);
+  --font: 'Manrope', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*{
+  margin: 0;
+  padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App,
+.App > .advice-container,
+.advice-container > .divider-and-button {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.App {
+  width: 1440px;
+  height: 100vh;
+  background-color: var(--Dark-Blue);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.App > .advice-container{
+  box-sizing: border-box;
+  justify-content: space-around;
+  width: 33%;
+  height: 50%;
+  padding: 20px;
+  padding-bottom: 0;
+  background-color: var(--Dark-Grayish-Blue);
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 5px black;
+}
+.advice-container > .advice-number{
+  color: var(--Neon-Green);
+  font-family: var(--font);
+}
+.advice-container > .advice{
+  display: flex;
+  align-items: center;
+  color: var(--Light-Cyan);
+  font-size: 28px;
+  font-family: var(--font);
+  height: 320px;
+}
+.divider-and-button > .divider{
+  display: flex;
+  margin: 20px;
+  width: 80%;
+}
+.divider-and-button > .dice-button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: -30px;
+  background-color: var(--Neon-Green);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 0;
+}
+.divider-and-button > .dice-button:hover{
+  cursor: pointer;
+  box-shadow: 0px 0px 15px 5px var(--Neon-Green);
+}
+.dice-button > .dice{
+  width: 25px;
+  height: 25px;
+}
+.App > .footer{
+  position: absolute;
+  bottom: 20px;
+  color: var(--Light-Cyan);
+}
+.footer > a{
+  text-decoration: none;
+}
+@media only screen and (max-width: 375px) {
+  .App{
+    width: 375px;
   }
-  to {
-    transform: rotate(360deg);
+  .App > .advice-container{
+    width: 90%;
+    height: 70%;
+  }
+  .divider-and-button > .divider{
+    width: 80%;
+    content: url("./images/pattern-divider-mobile.png");
   }
 }
